@@ -1,4 +1,39 @@
-.monaco-editor .margin, .monaco-editor-background, .monaco-editor .inputarea.ime-input {
+.mtk4 {
+  color: #e26428;
+  font-weight: bold;
+}
+
+.decorator.name, .decorator.punctuation:not(.block), .import.keyword {
+  font-family: 'Operator Mono' !important;
+  font-size: 14px !important;
+  color: #f5ea65 !important;
+  text-shadow: 0 0 5px #ffdc33, 0 0 1px #084214, 0 0 3px #484605, 0 0 2px #64ff02 !important;
+}
+
+.attribute-name {
+  font-family: 'Operator Mono' !important;
+  font-size: 14px !important;
+  color: #f5ea65 !important;
+  text-shadow: 0 0 5px #ffdc33, 0 0 1px #084214, 0 0 3px #484605, 0 0 2px #64ff02 !important;
+}
+
+
+.type.storage,.type.storage.declaration, .storage.class.modifier {
+  font-family: 'Operator Mono' !important;
+  font-size: 14px !important;
+  color: #f5ea65 !important;
+  text-shadow: 0 0 5px #ffdc33, 0 0 1px #084214, 0 0 3px #484605, 0 0 2px #64ff02 !important;
+}
+
+.type.storage.arrow.function {
+  font-family: 'Fira Code'
+}
+
+.html.quoted.double {
+  color: #f68d02!important;
+}
+
+.monaco-editor, .inputarea.ime-input {
   background: transparent;
 }
 

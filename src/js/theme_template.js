@@ -1,5 +1,6 @@
 (function () {
 
+
   // Grab body node
   const bodyNode = document.querySelector('body');
 
@@ -14,22 +15,24 @@
     var initialThemeStyles = themeStyleTag.innerText;
     
     var updatedThemeStyles = initialThemeStyles;
-    
+    // fff5f6
     if (!disableGlow) {
       /* replace neon red */
-      updatedThemeStyles = updatedThemeStyles.replace(/color: #fe4450;/g, "color: #fff5f6; text-shadow: 0 0 2px #000, 0 0 10px #fc1f2c[NEON_BRIGHTNESS], 0 0 5px #fc1f2c[NEON_BRIGHTNESS], 0 0 25px #fc1f2c[NEON_BRIGHTNESS];");
+      updatedThemeStyles = updatedThemeStyles.replace(/color: #fe4450;/g, "color: #ff2f2f; text-shadow: 0 0 7px #2b0808, 0 0 1px #b30404, 0 0 3px #f90336, 0 0 2px #bf0808");
       
       /* replace neon pink */
-      updatedThemeStyles = updatedThemeStyles.replace(/color: #ff7edb;/g, "color: #f92aad; text-shadow: 0 0 2px #100c0f, 0 0 5px #dc078e33, 0 0 10px #fff3;");
+      updatedThemeStyles = updatedThemeStyles.replace(/color: #ff7edb;/g, "color: #e7d8f7; text-shadow:0 0 6px #6900c5, 0 0 1px #8656c1, 0 0 3px #4b1494, 0 0 2px #3d1048");
+      // updatedThemeStyles = updatedThemeStyles.replace(/color: #ff7edb;/g, "color: #b075ff;");
       
-      /* replace yellow */
-      updatedThemeStyles = updatedThemeStyles.replace(/color: #fede5d;/g, "color: #f4eee4; text-shadow: 0 0 2px #393a33, 0 0 8px #f39f05[NEON_BRIGHTNESS], 0 0 2px #f39f05[NEON_BRIGHTNESS];");
+      /* replace purple - old yellow */
+      // updatedThemeStyles = updatedThemeStyles.replace(/color: #fede5d;/g, "color: #ffcc13; text-shadow:0 0 7px #001716, 0 0 1px #d7f755, 0 0 3px #01ec35, 0 0 2px #00fb37");
+      updatedThemeStyles = updatedThemeStyles.replace(/color: #fede5d;/g, "color: #ffbfe6; text-shadow:0 0 7px #ff04b2, 0 0 1px #f768bc, 0 0 3px #d83697, 0 0 2px #ff73c7");
       
       /* replace green */
-      updatedThemeStyles = updatedThemeStyles.replace(/color: #72f1b8;/g, "color: #72f1b8; text-shadow: 0 0 2px #100c0f, 0 0 10px #257c55[NEON_BRIGHTNESS], 0 0 35px #212724[NEON_BRIGHTNESS];");
+      updatedThemeStyles = updatedThemeStyles.replace(/color: #72f1b8;/g, "color: #65f5a5; text-shadow:0 0 5px #2c861c, 0 0 1px #084214, 0 0 3px #484605, 0 0 2px #64ff02; font-family: 'Operator Mono'; font-size: 15px");
       
       /* replace blue */
-      updatedThemeStyles = updatedThemeStyles.replace(/color: #36f9f6;/g, "color: #fdfdfd; text-shadow: 0 0 2px #001716, 0 0 3px #03edf9[NEON_BRIGHTNESS], 0 0 5px #03edf9[NEON_BRIGHTNESS], 0 0 8px #03edf9[NEON_BRIGHTNESS];");
+      updatedThemeStyles = updatedThemeStyles.replace(/color: #36f9f6;/g, "color: #34ebdd; text-shadow: 0 0 7px #001716, 0 0 1px #0321f9, 0 0 3px #03edf9, 0 0 2px #0d2fd4");
     }
 
     /* append the remaining styles */
