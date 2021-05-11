@@ -8,7 +8,9 @@
 }
 
 .mtk4 {
-  color: #f97e72;
+  /* color: #f97e72; */
+  font-weight: bold;
+  color: #48dc98;
 }
 
 .mtk10 {
@@ -93,7 +95,6 @@
   top: 0px;
   left: 0px;
   width: 4px;
-  background: linear-gradient(to bottom, #fc28a8, #03edf9) !important;
   opacity: 1;
 }
 

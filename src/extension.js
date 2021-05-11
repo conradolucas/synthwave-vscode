@@ -38,7 +38,7 @@ function activate(context) {
 	
 	let brightness = parseFloat(config.brightness) > 1 ? 1 : parseFloat(config.brightness);
 	brightness = brightness < 0 ? 0 : brightness;
-	brightness = isNaN(brightness) ? 0.45 : brightness;
+	brightness = isNaN(brightness) ? 0.10 : brightness;
 
 	const parsedBrightness = Math.floor(brightness * 255).toString(16).toUpperCase();
 	let neonBrightness = parsedBrightness;
