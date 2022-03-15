@@ -37,6 +37,13 @@
   background: transparent;
 }
 
+.tab .monaco-icon-label-container {
+  max-width: 15ch;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 /* Add the subtle gradient to the editor background */
 .monaco-editor {
   background-color: transparent !important;
